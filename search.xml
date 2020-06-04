@@ -62,13 +62,12 @@
 <li><p>下载 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>  </p>
 </li>
 <li><p>生成SSH密钥  </p>
-<pre><code class="bash">$ git config --global user.name <span class="string">"your github username"</span>
-$ git config --global user.email <span class="string">"your email signed up for github"</span>
-$ ssh-keygen -t rsa -C <span class="string">"your email signed up for github"</span></code></pre>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">    $ git config --global user.name <span class="string">"your github username"</span></span><br><span class="line">    $ git config --global user.email <span class="string">"your email signed up for github"</span></span><br><span class="line">    $ ssh-keygen -t rsa -C <span class="string">"your email signed up for github"</span></span><br><span class="line">    ``` </span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line">import re</span><br><span class="line">string = <span class="string">'A=&#123;1,3,5&#125;,B=&#123;2,4,6&#125;,R=1'</span></span><br><span class="line">s = re.search(<span class="string">'A=&#123;(.*?)&#125;,B=&#123;(.*?)&#125;,R=(\d)'</span>,string)</span><br><span class="line"><span class="built_in">print</span>(s.groups())</span><br><span class="line"></span><br><span class="line">a = list(map(int,s.group(1).split(<span class="string">','</span>)))</span><br><span class="line">b = list(map(int,s.group(2).split(<span class="string">','</span>)))</span><br><span class="line">r = int(s.group(3))</span><br><span class="line"></span><br><span class="line">res = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(len(b)):</span><br><span class="line">        <span class="keyword">if</span> a[i]&lt;=b[j] and b[j]-a[i]&lt;=r:</span><br><span class="line">            res.append([a[i],b[j]])</span><br><span class="line">result = <span class="string">''</span></span><br><span class="line"><span class="keyword">for</span> l <span class="keyword">in</span> res:</span><br><span class="line">    result += <span class="string">'('</span>+str(l[0])+<span class="string">','</span>+str(l[1])+<span class="string">')'</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
 <p> 密钥在  C:\Users\用户名\.ssh\id_rsa.pub 文件中 &emsp;  ‘用户名’ 替换成本机用户名  </p>
 </li>
 <li><p>在Github中添加SSH</p>
-<p> 进入Github的<kbd>settings</kbd>中的<kbd>SSH and GPG keys</kbd>粘贴密钥即可<br> <img src="./SSH.png" alt=""></p>
+<p> 进入Github的<kbd>settings</kbd>中的<kbd>SSH and GPG keys</kbd>粘贴密钥即可<br> <img src="../imgs/SSH.PNG" alt=""></p>
 </li>
 </ol>
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></p>
