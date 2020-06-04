@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		Hello World | 
+		博客搭建 | 
 	 
 	iNote
 	</title>
@@ -91,7 +91,7 @@
 
 			
 							<ul>
-								<li class="file active">
+								<li class="file">
 									<a href="/2020/06/04/hello-world/">
 										hello-world
 									</a>
@@ -100,7 +100,7 @@
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2020/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
 										博客搭建
 									</a>
@@ -116,11 +116,11 @@
 	<div id="content">
 		<h1 id="article-title">
 
-	hello-world
+	博客搭建
 </h1>
 <div class="article-meta">
 	<span>鱼腩</span>
-	<span>2020-06-04 14:58:56</span>
+	<span>2020-06-04 15:17:31</span>
 	<span id="busuanzi_container_page_pv">
 		本文阅读量 <span id="busuanzi_value_page_pv"></span> 次
 	</span>
@@ -132,19 +132,71 @@
 </div>
 
 <div id="article-content">
-	<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+	<h1 id="博客搭建记录"><a href="#博客搭建记录" class="headerlink" title="博客搭建记录"></a>博客搭建记录</h1><p>Vscode中按 <kbd>Ctrl</kbd>+<kbd>k</kbd>，然后<kbd>v</kbd> 预览Markdown</p>
+<p>本文安装步骤参考了<a href="https://www.bilibili.com/video/BV1cW411A7Jx?from=search&seid=12012051035502192478" target="_blank" rel="noopener">Bilibili</a></p>
+<table>
+<thead>
+<tr>
+<th align="center">步骤</th>
+<th align="center">操作</th>
+<th align="left">网址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">安装nodejs</td>
+<td align="left"><a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">安装git</td>
+<td align="left"><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">安装hexo</td>
+<td align="left"><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">安装主题</td>
+<td align="left"><a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">配置主题</td>
+<td align="left">-</td>
+</tr>
+</tbody></table>
+<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p>下载 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">nodejs</a></p>
+<h2 id="安装git（windows版）"><a href="#安装git（windows版）" class="headerlink" title="安装git（windows版）"></a>安装git（windows版）</h2><ol>
+<li><p>下载 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>  </p>
+</li>
+<li><p>生成SSH密钥  </p>
+</li>
+</ol>
+<pre><code>
+$ git config --global user.name "your github username"
+$ git config --global user.email "your email signed up for github"
+$ ssh-keygen -t rsa -C "your email signed up for github"
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+</code></pre>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<pre>
+$ ssh-keygen -t rsa -C "your email signed up for github"
+</pre>
+<blockquote>
+<blockquote>
+<p>密钥在  C:\Users\用户名\.ssh\id_rsa 文件中 &emsp;  ‘用户名’ 替换成本机用户名  </p>
+</blockquote>
+</blockquote>
+<p>&lt;% if (theme.valine.enableCounter){ %&gt;<br>        <span><br>            阅读量:<span id="<%= url_for(page.path) %>" class="leancloud_visitors" data-flag-title="<%- page.title %>"></span><br>        </span><br>&lt;% } %&gt;</p>
+<ol start="3">
+<li><p>在Github中添加SSH</p>
+<p> 进入Github的<kbd>settings</kbd>中的<kbd>SSH and GPG keys</kbd>粘贴密钥即可<br> <img src="../../themes/tree/source/SSH.png" alt="alt"></p>
+</li>
+</ol>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></p>
 
 </div>
 
@@ -152,13 +204,13 @@
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/2020/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  博客搭建
-              </a>
-            
         </div>
         <div class="item right">
+            
+              <a href="/2020/06/04/hello-world/">
+                hello-world
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
             
         </div>
     </div>
