@@ -213,7 +213,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-05 22:15:46" itemprop="dateModified" datetime="2020-06-05T22:15:46+08:00">2020-06-05</time>
+                <time title="Modified: 2020-06-05 23:51:01" itemprop="dateModified" datetime="2020-06-05T23:51:01+08:00">2020-06-05</time>
               </span>
 
           
@@ -283,6 +283,7 @@
 </tr>
 </tbody></table>
 <h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p>&emsp;下载 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">nodejs</a></p>
+<h2 id="申请博客"><a href="#申请博客" class="headerlink" title="申请博客"></a>申请博客</h2><p>&emsp;进入<a href="https://github.com/" target="_blank" rel="noopener">github</a>，创建一个新的repo，库名必须是：”<strong>用户名</strong>.github.io”<br>&emsp;博客的地址就是：”<a href="https://little-fish-lalala.github.io/&quot;">https://little-fish-lalala.github.io/&quot;</a></p>
 <h2 id="安装git（windows版）"><a href="#安装git（windows版）" class="headerlink" title="安装git（windows版）"></a>安装git（windows版）</h2><ol>
 <li><p>下载 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>  </p>
 </li>
@@ -314,6 +315,53 @@
 
 <figure class="highlight bash"><figcaption><span>发布博客</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save    <span class="comment"># 此插件用于部署到github上 </span></span><br><span class="line">hexo g    <span class="comment"># 用于生成模板 generate</span></span><br><span class="line">hexo d    <span class="comment"># 部署到github deploy</span></span><br></pre></td></tr></table></figure>
 <p>发布后在 <a href="https://little-fish-lalala.github.io/">https://little-fish-lalala.github.io/</a> 可看到博客</p>
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>&emsp;本文安装的是<a href="https://theme-next.js.org/" target="_blank" rel="noopener">Next主题</a>，其他主题可到<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo</a>的网站下载。<br>&emsp;主题的安装方法，以Next为例（其他主题安装方法类似）：</p>
+<figure class="highlight bash"><figcaption><span>安装Next主题</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo  <span class="comment"># 此处的hexo文件夹是安装hexo时，自己所设定blog文件夹</span></span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next  </span><br></pre></td></tr></table></figure>
+
+<p>实质就是：将主题文件夹下载下来，然后将其放入<kbd>themes/</kbd>文件夹下。</p>
+<h2 id="配置主题-本文配置的是Next主题，其他主题可能有差别"><a href="#配置主题-本文配置的是Next主题，其他主题可能有差别" class="headerlink" title="配置主题(本文配置的是Next主题，其他主题可能有差别)"></a>配置主题(本文配置的是Next主题，其他主题可能有差别)</h2><p><a href="https://theme-next.js.org/" target="_blank" rel="noopener">新版Next</a>，<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">旧版Next</a>，配置有一点区别，但是区别不大，目前普遍安装的是新版。</p>
+<h3 id="切换到Next主题"><a href="#切换到Next主题" class="headerlink" title="切换到Next主题"></a>切换到<strong>Next主题</strong></h3><pre><code>首先，进入**hexo的配置文件&lt;kbd&gt;_config.yml&lt;/kbd&gt;**，不是Next配置文件，找到theme字段，将其设为</code></pre><figure class="highlight bash"><figcaption><span>切换到Next主题</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#theme: landscape</span></span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改代码块的样式"><a href="#修改代码块的样式" class="headerlink" title="修改代码块的样式"></a>修改代码块的样式</h3><figure class="highlight bash"><figcaption><span>改变代码块样式</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  <span class="comment"># Code Highlight theme</span></span><br><span class="line">  <span class="comment"># See: https://github.com/highlightjs/highlight.js/tree/master/src/styles </span></span><br><span class="line">  <span class="comment"># 该网站有不同代码样式的名称，换掉下面的light的值即可</span></span><br><span class="line">  theme:</span><br><span class="line">    light: dracula   <span class="comment"># 直接此处修改主题的名字即可</span></span><br><span class="line">    dark: dracula</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加评论区"><a href="#添加评论区" class="headerlink" title="添加评论区"></a>添加评论区</h3><p>&emsp;本文使用的是<kbd>valine + leancloud</kbd><br>&emsp;申请<a href="https://leancloud.app/" target="_blank" rel="noopener">leancloud账号</a>,本博客使用的是国际版<br><img src="/2020/06/04/blog/leancloud1.png" alt="leancloud步骤一">  </p>
+<p><img src="/2020/06/04/blog/leancloud2.png" alt="leancloud步骤二">  </p>
+<p><img src="/2020/06/04/blog/leancloud3.png" alt="leancloud步骤三"></p>
+<figure class="highlight bash"><figcaption><span>添加评论区</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>   <span class="comment"># 原本是false</span></span><br><span class="line">  appId: your leancloud appId    <span class="comment"># 上图中对应的appId和appKey</span></span><br><span class="line">  appKey: your leancloud appKey</span><br><span class="line">  <span class="comment"># 其余的可以不用改</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="修改menu"><a href="#修改menu" class="headerlink" title="修改menu"></a>修改menu</h3><p>修改后的效果图<br><img src="/2020/06/04/blog/menu.png" alt></p>
+<p>首先进入<strong>Next主题的配置文件</strong><kbd>_config.yml</kbd></p>
+<figure class="highlight bash"><figcaption><span>添加menu</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  <span class="comment">#home: / || fa fa-home</span></span><br><span class="line">  <span class="comment">#about: /about/ || fa fa-user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || fa fa-tags</span></span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br><span class="line">  GitHub: https://github.com/little-fish-lalala || fab fa-github</span><br><span class="line">  知乎: https://www.zhihu.com/people/xiao-yu-19-12-28/posts || fab fa-zhihu</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置搜索"><a href="#配置搜索" class="headerlink" title="配置搜索"></a>配置搜索</h3><p>安装<kbd>hexo-generator-searchdb</kbd>，在站点的根目录下执行以下命令：</p>
+<figure class="highlight bash"><figcaption><span>添加搜索</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>编辑<kbd><strong>hexo配置文件</strong></kbd>，新增以下内容到任意位置：</p>
+<figure class="highlight bash"><figcaption><span>添加搜索</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
+
+<p>编辑<strong>Next主题配置文件</strong>，启用本地搜索功能：</p>
+<figure class="highlight bash"><figcaption><span>添加搜索</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line">local_search:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="配置站点统计信息"><a href="#配置站点统计信息" class="headerlink" title="配置站点统计信息"></a>配置站点统计信息</h3><p>使用的是不蒜子，编辑<strong>Next主题配置文件</strong></p>
+<figure class="highlight bash"><figcaption><span>全局配置</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="配置MathJax"><a href="#配置MathJax" class="headerlink" title="配置MathJax"></a>配置MathJax</h3><figure class="highlight bash"><figcaption><span>配置MathJax</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># MathJax Support</span></span><br><span class="line">mathjax:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="解决图片不显示问题"><a href="#解决图片不显示问题" class="headerlink" title="解决图片不显示问题"></a>解决图片不显示问题</h2><ol>
+<li>下载插件，必须是这个地址的插件</li>
+</ol>
+<figure class="highlight bash"><figcaption><span>配置MathJax</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>在<kbd>source/_posts/</kbd>文件夹在，建立与该markdown同名的文件夹<br>例如：blog.md,就是建立blog文件夹，然后该markdown的所有图片文件放在该文件夹下</li>
+</ol>
+<p><img src="/2020/06/04/blog/mdfolder.png" alt></p>
+<p><strong>在window下图片路径必须是相对路径</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](./blog/mdfolder.png)</span><br></pre></td></tr></table></figure>
+
+
 
       
     </div>
